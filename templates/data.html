@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Real Insights - US Housing Market</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../static/assets/css/mystyles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header" >
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+        <img src="../static/assets/title.gif" alt="Company Name">
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/map" class = "mainlink">US Housing Price</a></li>
+                <li><a href="/line" class = "mainlink">Charts</a></li>
+                <li><a href="/data" class = "mainlink">Data</a></li>
+                <li><a href="/about" class = "mainlink">About</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container-fluid text-center">    
+    <div class="row content">
+        <div class="col-sm-12 text-left" > 
+        <h1>Data</h1>
+        <script type="text/javascript" src="../static/js/getdata.js"></script> 
+        <div id="divResults"></div>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>

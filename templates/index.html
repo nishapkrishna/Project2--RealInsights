@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Real Insights - US Housing Market</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+      div {
+        display: block;
+        position: relative;
+        height: 100%;
+      }
+      div::after {
+        content: "";
+        background: url(../static/assets/bg.jpg);
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      }
+    </style>
+  <link rel="stylesheet" type="text/css" href="../static/assets/css/mystyles.css">
+
+</head>
+<body>
+  
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="../static/assets/title.gif" alt="Company Name">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/map" class = "mainlink">US Housing Price</a></li>
+          <li><a href="/line" class = "mainlink">Charts</a></li>
+          <li><a href="/data" class = "mainlink">Data</a></li>
+          <li><a href="/about" class = "mainlink">About</a></li>
+        </ul>
+    </div>
+    
+  </div>
+</nav>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-12 text-left" > 
+      <h2>Project Summary</h2>
+      <p>For this project we sought to use API calls to fetch and return nationwide real 
+        estate data from multiple sources and then visualize that data to illustrate how 
+        property values have changed over time. The period of time we chose to on was 
+        2012 to 2017. Our initial source of data from Kaggle.com was converted from CSV format 
+        to JSON and loaded to MongoDB. We then employed Flask API to call the housing data and 
+        display it on an interactive map of the United States using Plotly and Chloropleth. 
+        To drill down further we included a feature allowing the user to see data on the top 5 
+        highest values in the country or inspect value change by state. 
+         </p>
+         <br>
+         <img src="../static/assets/animate.gif" class="center" alt="Animated Company Name">
+    </div>
+    
+      <h3>Data Sources</h3>
+    <a href = "https://www.kaggle.com/waragones/us-real-estate-listings-by-zip-code/version/1#">
+      <p>Kaggle:https://www.kaggle.com/waragones/us-real-estate-listings-by-zip-code/version/1#</p></a>
+
+      <a href = "https://blog.quandl.com/api-for-housing-data">
+      <p>Quandle API Blog: https://blog.quandl.com/api-for-housing-data</p></a>
+
+      <a href = "https://www.quandl.com/api/v3/datasets/">
+        <p>Quandle API for Zillow: https://www.quandl.com/api/v3/datasets/</p></a>
+
+        <a href = "https://plot.ly/javascript/">
+          <p>Plotly for Javascript: https://plot.ly/javascript/</p></a>
+
+          <a href = "Zillow API: https://www.zillow.com/howto/api/APIOverview.htm">
+            <p>Zillow API: https://www.zillow.com/howto/api/APIOverview.htm</p></a>
+
+          
+
+<div class="audioplayer"
+  
+    data-video="TZCfydWF48c"  
+    data-autoplay="0"         
+    data-loop="1"             
+    id="youtube-audio" align="right">
+    <script src="https://www.youtube.com/iframe_api" controls></script>
+    <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
+    
+  </div>
+</div>
+
+</body>
+</html>
