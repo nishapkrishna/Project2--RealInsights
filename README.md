@@ -24,3 +24,5 @@ Specific Requirements
 5.	Project must include some level of user-driven interaction (e.g. menus, dropdowns, textboxes, etc.)
 
 6.	Final visualization should ideally include at least three views
+
+![alt text](https://github.com/nishapkrishna/RealInsights/blob/master/screencapture-localhost-5000-map-2019-05-22-13_29_13.png)
